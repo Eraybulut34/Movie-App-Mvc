@@ -1,0 +1,26 @@
+@model IEnumerable<Movie>
+
+@foreach (var movie in Model)
+{
+    <div class="card mb-3">
+    <div class="row no-gutter">
+        <div class="col-md-3">
+            <img src="@movie.ImageUrl" alt="">
+        </div>
+        <div class="col-md-9">
+            <div class="card-body">
+                <h5 class="card-title">
+                    @movie.Name
+                </h5>
+                <p class="card-tex">
+                    @movie.Description
+                </p>
+                <div class="card-text">
+                    3 days ago
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+}
+
